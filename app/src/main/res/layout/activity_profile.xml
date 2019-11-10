@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBase"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/slider2"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/slider2" />
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Fill up the form below!"
+        android:textColor="@color/textColorLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider2" />
+
+    <TextView
+        android:id="@+id/nameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/lato"
+        android:text="Name"
+        android:textColor="@color/textColorHint"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerText" />
+
+    <ImageView
+        android:id="@+id/NameUiBG"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:alpha=".7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameHeader"
+        app:srcCompat="@drawable/shape_square" />
+
+    <ImageView
+        android:id="@+id/nameImage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@color/UIcolorLight"
+        android:padding="15dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/NameUiBG"
+        app:layout_constraintStart_toStartOf="@+id/NameUiBG"
+        app:layout_constraintTop_toTopOf="@+id/NameUiBG"
+        app:srcCompat="@drawable/user" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="Mr. John"
+        android:inputType="textCapWords|textPersonName"
+        android:textColor="@color/textColorLight"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/NameUiBG"
+        app:layout_constraintEnd_toEndOf="@+id/NameUiBG"
+        app:layout_constraintStart_toEndOf="@+id/nameImage"
+        app:layout_constraintTop_toTopOf="@+id/NameUiBG" />
+
+    <TextView
+        android:id="@+id/addressHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Address"
+        android:textColor="@color/textColorHint"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameUiBG" />
+
+    <ImageView
+        android:id="@+id/addressBG"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:alpha=".7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressHeader"
+        app:srcCompat="@drawable/shape_square" />
+
+    <ImageView
+        android:id="@+id/addressImage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@color/UIcolorLight"
+        android:padding="15dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/addressBG"
+        app:layout_constraintStart_toStartOf="@+id/addressBG"
+        app:layout_constraintTop_toTopOf="@+id/addressBG"
+        app:srcCompat="@drawable/location" />
+
+    <EditText
+        android:id="@+id/addressText_1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="House-14, Floor-8, Block-D"
+        android:inputType="textCapWords|textPersonName"
+        android:textColor="@color/textColorLight"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addressBG"
+        app:layout_constraintEnd_toEndOf="@+id/addressBG"
+        app:layout_constraintStart_toEndOf="@+id/addressImage"
+        app:layout_constraintTop_toTopOf="@+id/addressBG" />
+
+    <ImageView
+        android:id="@+id/addressBG2"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:alpha=".7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressBG"
+        app:srcCompat="@drawable/shape_square" />
+
+    <ImageView
+        android:id="@+id/addressImage2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@color/UIcolorLight"
+        android:padding="15dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/addressBG2"
+        app:layout_constraintStart_toStartOf="@+id/addressBG2"
+        app:layout_constraintTop_toTopOf="@+id/addressBG2"
+        app:srcCompat="@drawable/location" />
+
+    <EditText
+        android:id="@+id/addressText_2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="Mirpur-11, Dhaka."
+        android:inputType="textCapWords|textPersonName"
+        android:textColor="@color/textColorLight"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addressBG2"
+        app:layout_constraintEnd_toEndOf="@+id/addressBG2"
+        app:layout_constraintStart_toEndOf="@+id/addressImage2"
+        app:layout_constraintTop_toTopOf="@+id/addressBG2" />
+
+    <TextView
+        android:id="@+id/addressHeader2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="Line 1"
+        android:textColor="@color/textColorHint"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/addressText_1"
+        app:layout_constraintTop_toTopOf="@+id/addressText_1" />
+
+    <TextView
+        android:id="@+id/addressHeader3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="Line 2"
+        android:textColor="@color/textColorHint"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/addressText_2"
+        app:layout_constraintTop_toTopOf="@+id/addressText_2" />
+
+    <TextView
+        android:id="@+id/footerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Please be specific about the address."
+        android:textColor="@color/textColorLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressBG2"
+        app:srcCompat="@drawable/warning" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/lato"
+        android:text="Next"
+        android:textColor="@color/textColorLight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/mProgressbar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:indeterminateTint="@color/colorAccent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/footerText"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calcutta Dry Cleaners</string>
+
+    <string-array name="itemCategory">
+        <item>Men</item>
+        <item>Ladies</item>
+        <item>Others</item>
+    </string-array>
+</resources>

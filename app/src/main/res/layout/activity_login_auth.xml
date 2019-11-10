@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBase"
+    tools:context=".LoginAuthActivity">
+
+    <ImageView
+        android:id="@+id/nameUiBG2"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:alpha=".7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/shape_square" />
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Let's get you logged in!"
+        android:textColor="@color/textColorLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginIcon" />
+
+    <ImageView
+        android:id="@+id/NameUiBG"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:alpha=".7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneHeader"
+        app:srcCompat="@drawable/shape_square" />
+
+    <TextView
+        android:id="@+id/PhoneHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/lato"
+        android:text="Phone Number"
+        android:textColor="@color/textColorHint"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerText" />
+
+    <ImageView
+        android:id="@+id/nameImage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@color/UIcolorLight"
+        android:padding="15dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/NameUiBG"
+        app:layout_constraintStart_toStartOf="@+id/NameUiBG"
+        app:layout_constraintTop_toTopOf="@+id/NameUiBG"
+        app:srcCompat="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/numberExtension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="+880"
+        android:textAlignment="center"
+        android:textColor="@color/textColorLight"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/NameUiBG"
+        app:layout_constraintStart_toEndOf="@+id/nameImage"
+        app:layout_constraintTop_toTopOf="@+id/NameUiBG" />
+
+    <EditText
+        android:id="@+id/PhoneeditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="171555555"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textColor="@color/textColorLight"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/NameUiBG"
+        app:layout_constraintEnd_toEndOf="@+id/NameUiBG"
+        app:layout_constraintStart_toEndOf="@+id/numberExtension"
+        app:layout_constraintTop_toTopOf="@+id/NameUiBG" />
+
+    <android.support.constraint.Group
+        android:id="@+id/CodeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="codeImage,CodeHeader,codeEditText,uiBgCode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/uiBgCode"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:alpha=".7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CodeHeader"
+        app:srcCompat="@drawable/shape_square" />
+
+    <TextView
+        android:id="@+id/CodeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="6 Digit Code"
+        android:textColor="@color/textColorHint"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameUiBG" />
+
+    <ImageView
+        android:id="@+id/codeImage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@color/UIcolorLight"
+        android:padding="15dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/uiBgCode"
+        app:layout_constraintStart_toStartOf="@+id/uiBgCode"
+        app:layout_constraintTop_toTopOf="@+id/uiBgCode"
+        app:srcCompat="@drawable/lock" />
+
+    <EditText
+        android:id="@+id/codeEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="Enter the 6 digit code"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textColor="@color/textColorLight"
+        app:layout_constraintBottom_toBottomOf="@+id/uiBgCode"
+        app:layout_constraintEnd_toEndOf="@+id/uiBgCode"
+        app:layout_constraintStart_toEndOf="@+id/codeImage"
+        app:layout_constraintTop_toTopOf="@+id/uiBgCode" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/lato"
+        android:text="Send Verification Code"
+        android:textColor="@color/textColorLight"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/verificationCodeInfoText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/lato"
+        android:text="A verification code will be sent to your Phone number. Wait at least one minute before requesting for a new code!"
+        android:textAlignment="center"
+        android:textColor="@color/textColorLight"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/sendButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.Group
+        android:id="@+id/ErrorGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="errorText,errorImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Some error occurred!"
+        android:textAlignment="center"
+        android:textColor="@color/textColorLight"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorImage" />
+
+    <ImageView
+        android:id="@+id/errorImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uiBgCode"
+        app:srcCompat="@drawable/error" />
+
+    <ImageView
+        android:id="@+id/loginIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSignUp"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/nameUiBG2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorText"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

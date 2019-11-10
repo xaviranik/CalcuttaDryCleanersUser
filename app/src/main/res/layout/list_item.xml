@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:id="@+id/itemRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/orderStatusBG"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/orderStatusHeader"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/shape_square" />
+
+            <ImageView
+                android:id="@+id/iconImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/orderItemNumber"
+                app:srcCompat="@drawable/laundry_basket" />
+
+            <TextView
+                android:id="@+id/orderItemNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userOrderIDTextC"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="Ordered Items : "
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/orderBillC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderItemNumber"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="Total Price :"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/timeStampText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderBillC"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="Timestamp :"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/orderStatusHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/iconImage"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="Order Status :"
+                android:textColor="@color/textColorLight"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/orderItemNumber"
+                android:layout_alignTop="@+id/orderStatusHeader"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="Washing"
+                android:textColor="@color/textColorLight"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userOrderIDTextC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iconImage"
+                android:layout_toEndOf="@+id/iconImage"
+                android:fontFamily="@font/lato"
+                android:padding="5dp"
+                android:text="Order ID :"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
